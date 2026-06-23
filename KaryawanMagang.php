@@ -30,7 +30,8 @@ class KaryawanMagang extends Karyawan
 
     public function hitungGajiBersih()
     {
-        return $this->uangSakuBulanan;
+        return ($this->hariKerjaMasuk * $this->gajiDasarPerHari)
+           * 0.80;
     }
 
     public function tampilkanProfilKaryawan()
